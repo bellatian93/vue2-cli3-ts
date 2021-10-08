@@ -11,7 +11,11 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({
   name: 'app'
 })
-export default class App extends Vue {}
+export default class  extends Vue {
+  private created() {
+    console.log(12345)
+  }
+}
 </script>
 
 <style lang="less">
